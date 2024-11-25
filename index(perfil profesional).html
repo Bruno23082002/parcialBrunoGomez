@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Lionel Messi</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil Profesional</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Perfil Profesional de Lionel Messi</h1>
+
+        <!-- Biografía -->
+        <section>
+            <h2>Biografía</h2>
+            <p>
+                Lionel Messi es un futbolista argentino considerado uno de los mejores de la historia. Nació el 24 de junio de 1987 en Rosario, Argentina. Ha ganado múltiples títulos, incluyendo el Mundial 2022, y numerosos galardones individuales, como 7 Balones de Oro.
+            </p>
+        </section>
+
+        <!-- Tabla de su carrera -->
+        <section>
+            <h2>Resumen de su Carrera</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Equipo</th>
+                        <th>Títulos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2004-2021</td>
+                        <td>FC Barcelona</td>
+                        <td>35 Títulos</td>
+                    </tr>
+                    <tr>
+                        <td>2021-2023</td>
+                        <td>Paris Saint-Germain</td>
+                        <td>3 Títulos</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Selección Argentina</td>
+                        <td>Copa del Mundo</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Selección Argentina</td>
+                        <td>Oro Olímpico</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>FC Barcelona</td>
+                        <td>Balón de Oro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Redes sociales y CV -->
+        <section>
+            <h2>Contacto</h2>
+            <p>Síguelo en sus redes sociales:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/leomessi" target="_blank" class="icon">Facebook</a>
+                <a href="https://www.instagram.com/leomessi" target="_blank" class="icon">Instagram</a>
+                <a href="https://twitter.com/leomessi" target="_blank" class="icon">Twitter</a>
+            </div>
+            <p>
+                <a href="../pdf/CV_Lionel_Messi.pdf" target="_blank">Descargar CV</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por Bruno Gomez Franco | Fecha: <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

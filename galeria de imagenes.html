@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Lionel Messi</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil Profesional</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galería de Imágenes</h1>
+        <p>Explora algunos de los momentos más destacados de la carrera de Lionel Messi.</p>
+
+        <!-- Galería de imágenes -->
+        <section class="gallery">
+            <div class="image-container">
+                <img src="imagenes\63a1aa1a03e69.jpg" alt="Messi con la Copa del Mundo">
+                <div class="overlay">
+                    <p>Messi levantando la Copa del Mundo 2022.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\messi2.jpg" alt="Messi en el PSG">
+                <div class="overlay">
+                    <p>Messi jugando para el Paris Saint-Germain.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\messi3.jpg" alt="Messi en el Barcelona">
+                <div class="overlay">
+                    <p>Messi celebrando un gol con el FC Barcelona.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\messi con la copa ameroica.jpg" alt="Messi con la Copa América">
+                <div class="overlay">
+                    <p>Messi con la Copa América 2021.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\messi con la seleccion.jpg" alt="Messi con la Selección Argentina">
+                <div class="overlay">
+                    <p>Messi liderando la Selección Argentina.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\faOFooOrN_720x0__1.jpg" alt="Messi con un Balón de Oro">
+                <div class="overlay">
+                    <p>Messi recibiendo uno de sus Balones de Oro.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\messi en el mundial.jpg" alt="Messi en el Mundial">
+                <div class="overlay">
+                    <p>Messi en el Mundial de Catar 2022.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\messi en sus inicioa.jpg" alt="Messi en sus inicios">
+                <div class="overlay">
+                    <p>Messi en sus inicios en el FC Barcelona.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por Bruno Gomez Franco | Fecha: <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

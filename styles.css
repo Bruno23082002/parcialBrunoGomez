@@ -1,0 +1,210 @@
+/* Archivo: css/styles.css */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color del texto en gris oscuro */
+}
+
+/* Encabezado */
+header {
+    background-color: #0066cc; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 1rem 0; /* Espaciado interno vertical */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Elementos alineados en fila */
+    justify-content: center; /* Centrados horizontalmente */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los enlaces */
+}
+
+nav ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color de texto blanco */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Contenido principal */
+main {
+    text-align: center; /* Centrar texto */
+    padding: 2rem; /* Espaciado interno */
+}
+
+main h1 {
+    color: #0066cc; /* Texto azul */
+    font-size: 2.5rem; /* Tamaño grande */
+}
+
+main p {
+    font-size: 1.2rem; /* Tamaño intermedio */
+    margin: 1rem 0; /* Espaciado vertical */
+}
+
+/* Botones animados */
+.buttons {
+    display: flex; /* Botones en fila */
+    justify-content: center; /* Centrados horizontalmente */
+    gap: 15px; /* Espaciado entre botones */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+.buttons button {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño de texto */
+    background-color: #0066cc; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.buttons button:hover {
+    background-color: #004c99; /* Cambia a azul más oscuro */
+    transform: scale(1.1); /* Aumenta tamaño */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado */
+    padding: 1rem 0; /* Espaciado interno vertical */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+footer span {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/*Galeria de Imagenes*/
+/* Estilos de la galería */
+.gallery {
+    display: grid; /* Diseño de rejilla */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espaciado entre imágenes */
+    margin: 2rem auto;
+    max-width: 1200px; /* Ancho máximo de la galería */
+}
+
+.image-container {
+    position: relative; /* Posicionamiento para overlay */
+    overflow: hidden; /* Ocultar contenido que sobresalga */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.image-container img {
+    width: 100%; /* Imagen ocupa todo el contenedor */
+    display: block;
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+}
+
+.overlay {
+    position: absolute; /* Encima de la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+    display: flex; /* Centrar texto */
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Invisible por defecto */
+    transition: opacity 0.3s ease; /* Suave transición */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Hacer visible el overlay */
+}
+
+/*Para el Blog*/
+/* Estilos del blog */
+/* Estilos del blog */
+.blog {
+    display: grid; /* Diseño de rejilla */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas flexibles */
+    gap: 20px; /* Espaciado entre artículos */
+    margin: 2rem auto;
+    max-width: 1200px; /* Ancho máximo */
+}
+
+.blog-post {
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Contener contenido */
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+.blog-post:hover {
+    transform: translateY(-10px); /* Elevar al pasar el ratón */
+}
+
+.blog-post img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    display: block;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.blog-post p {
+    padding: 0 1rem;
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #333;
+}
+
+.read-more {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Azul */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Animación de desplazamiento */
+.blog-post {
+    opacity: 0; /* Invisible al inicio */
+    transform: translateY(20px); /* Comienza desplazado */
+    animation: fadeInUp 1s forwards; /* Animación de entrada */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
